@@ -1,6 +1,6 @@
 process.env.NODE_CONFIG_DIR = __dirname + '/config/';
 
-const express = require('express');
+const express = require('express'); //для создания сервера
 const ReadRss = require('./service/readRss.service.js');
 
 
