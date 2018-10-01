@@ -1,0 +1,25 @@
+{
+  "name": "@antbat/6",
+  "version": "1.0.0",
+  "description": "* Real life coding (4-5 days) * Experiance of reading big external projects or libraray.( Mongoose, request )",
+  "engines": {
+    "node": "8.9.1"
+  },
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.6.0"
+  },
+  "dependencies": {
+    "config": "^2.0.1",
+    "express": "^4.16.3",
+    "iconv-lite": "^0.4.24",
+    "mongoose": "^5.2.17",
+    "request": "^2.88.0",
+    "xml2js": "^0.4.19"
+  }
+}
