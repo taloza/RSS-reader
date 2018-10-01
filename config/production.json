@@ -1,8 +1,8 @@
 {
     "port": 3020,
     "mongodb": {
-       
-        "connection": "mongodb://<dbuser>:<dbpassword>@ds115613.mlab.com:15613/coursejs"
+        "connection": "mongodb://admin:vaqci1-tUgryf-viqnak@ds115553.mlab.com:15553/coursejs"
+        "connection": "mongodb://taloza:Ta4Loza4@ds115613.mlab.com:15613/coursejs"
 
 
     }
