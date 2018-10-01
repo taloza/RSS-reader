@@ -45,12 +45,12 @@ class ReadRss {
                     console.log('this is GET DATA from RSS error');
                     console.log(error);
                 } else {
-                    const xml = data.body;
+                    //const xml = data.body;
                     const encoding = this.encoding;
                     var bodyWithCorrectEncoding = iconv.decode(body, encoding);
                     console.log(bodyWithCorrectEncoding);
-                    console.dir(xml);
-                    resolve(xml);
+                    //console.dir(xml);
+                    resolve( bodyWithCorrectEncoding);
                 }
             };
 

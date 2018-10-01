@@ -43,39 +43,39 @@ async function myRouter(req, res) {
 app.get('/', myRouter);
 app.listen(port);
 
+setTimeout( async () =>{
+    // URLS error
+    const rssReaderTyzhden = new ReadRss(Tyzhden);
+    await rssReaderTyzhden.dataProcess();
+}, 10);
+
 // setTimeout( async () =>{
 //     // URLS error
-//     const rssReaderTyzhden = new ReadRss(Tyzhden);
-//     await rssReaderTyzhden.dataProcess();
-// }, 10);
+//     const rssReaderFinance = new ReadRss(Finance);
+//     await rssReaderFinance.dataProcess();
+// }, 100);
+
 
 setTimeout( async () =>{
     // URLS error
-    const rssReaderFinance = new ReadRss(Finance);
-    await rssReaderFinance.dataProcess();
-}, 100);
-
-
-// setTimeout( async () =>{
-//     // URLS error
-//     const rssReaderRBK = new ReadRss(RBK);
+    const rssReaderRBK = new ReadRss(RBK);
 	
 	
-//     await rssReaderRBK.dataProcess();
-// }, 200);
+    await rssReaderRBK.dataProcess();
+}, 200);
 
-// setTimeout( async () =>{
-//     // init error
-//     // const rssReaderFacts = new ReadRss();
-//     const rssReaderFacts = new ReadRss(Facts);
-//     await rssReaderFacts.dataProcess();
-// }, 300);
+setTimeout( async () =>{
+    // init error
+    // const rssReaderFacts = new ReadRss();
+    const rssReaderFacts = new ReadRss(Facts);
+    await rssReaderFacts.dataProcess();
+}, 300);
 
-// setTimeout( async () =>{
-//     // error free
-//     const rssReaderKorrespondent = new ReadRss(Korrespondent);
-//     await rssReaderKorrespondent.dataProcess();
-// }, 400);
+setTimeout( async () =>{
+    // error free
+    const rssReaderKorrespondent = new ReadRss(Korrespondent);
+    await rssReaderKorrespondent.dataProcess();
+}, 400);
 
 
 console.log('finish code here!!!!!!!');
